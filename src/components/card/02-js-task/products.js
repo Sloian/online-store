@@ -96,5 +96,18 @@ export const products = [
     "price": 70999,
     "category": "laptops",
     "brand": "apple"
+  },
+  {
+    "id": "f4zo7g5nb4okr9kjkav",
+    "images": [
+      "https://content1.rozetka.com.ua/goods/images/big_tile/119503415.jpg",
+      "https://content.rozetka.com.ua/goods/images/big_tile/119503486.jpg",
+      "https://content1.rozetka.com.ua/goods_tags/images/original/187290948.png"
+    ],
+    "title": "Ноутбук Apple MacBook Pro 16\" 512GB 2019 (MVVL2) Silver",
+    "rating": 1.57,
+    "price": 81000,
+    "category": "laptops",
+    "brand": "apple"
   }
 ]

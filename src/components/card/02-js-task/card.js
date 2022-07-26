@@ -1,42 +1,49 @@
 export default class Card {
-  constructor (someProduct = {}) {
-    this.state = someProduct;
+  constructor(someProduct){
+    this.componentProduct = someProduct;
     this.myRender();
   }
 
+
+
   getTemplate () {
     const result =  `
-      <div class="os-product-card">
-        <div class="os-product-img" style="background-image: url(${this.state.images[0]});"></div>
-
-        <div class="os-product-content">
-          <div class="os-product-price-wrapper">
-            <div class="os-product-rating">
-              <span>${this.state.rating}</span>
-              <i class="bi bi-star"></i>
-            </div>
-
-            <div class="os-product-price">${this.state.price}</div>
+    <div class = "os-product-card">
+      <!-- Card component -->
+      <div class="product-image" style="background-image: url(${this.componentProduct.images[0]});"></div>
+      <div class="product-content">
+        <div class="product-rating-price">
+          <div class="product-rating">
+            <span>2.89</span>
+            <i class="bi bi-star">
+            </i>
           </div>
-
-          <h5 class="os-product-title">${this.state.title}</h5>
-          <p class="os-product-description">${this.state.category}</p>
+        <div class="product-price">${this.componentProduct.price}</div>
         </div>
-
-        <footer class="os-product-footer">
-          <button class="os-btn-primary" data-element="addToCartBtn">
-            Add To Cart
-          </button>
-        </footer>
+        <h5 class="product-title">
+          ${this.componentProduct.title}
+        </h5>
+        <p class="product-description">${this.componentProduct.category}</p>
       </div>
+      <footer class="product-footer">
+        <button class="wrapper-btn-primary" data-element="addToCartBtn">
+          <i class="bi bi-box-seam os-product-shopping-bag"></i>
+          Add To Cart
+        </button>
+      </footer>
+      </div>
+    </div>
     `;
 
-    return result
+
+    return result;
   }
 
-  update(data = {}) {
-    this.state = data;
+
+  update(data = {}){
+    this.componentProduct = data;
     this.componentElement.innerHTML = this.getTemplate();
+
   }
 
   myRender () {

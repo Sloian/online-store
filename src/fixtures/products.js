@@ -57,5 +57,17 @@ export const products = [
     "price": 22500,
     "category": "laptops",
     "brand": "acer"
+  },
+  {
+    "id": "cvr39caokhhkr9kjkav",
+    "images": [
+      "https://content1.rozetka.com.ua/goods/images/big_tile/25101152.jpg",
+      "https://content1.rozetka.com.ua/goods/images/big_tile/25101161.jpg"
+    ],
+    "title": "Ноутбук Acer Nitro 5 AN515-55-56WH (NH.Q7PEU.00L) Obsidian Black Суперцена!!!",
+    "rating": 0.53,
+    "price": 28999,
+    "category": "laptops",
+    "brand": "acer"
   }
 ];

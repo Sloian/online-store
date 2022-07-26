@@ -5,16 +5,19 @@ export default class CardsList {
     this.data = data;
     this.render();
     this.renderCards();
+
+
   }
 
   getTemplate () {
     return `
       <div>
-        <div class="os-products-list" data-element="body">
-          <!-- Cards list -->
+        <div class ="os-product-list" data-element="body">
+          <!--Card list-->
         </div>
       </div>
     `;
+
   }
 
   render () {
@@ -32,7 +35,7 @@ export default class CardsList {
       return card.element;
     });
 
-    const body = this.element.querySelector('[data-element="body"]');
+    const body = this.element.querySelector('[data-element="body"]')
 
     body.innerHTML = '';
     body.append(...cards);
@@ -42,5 +45,6 @@ export default class CardsList {
     this.data = data;
 
     this.renderCards();
+
   }
 }

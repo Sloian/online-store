@@ -1,1 +1,7 @@
 /* put your styles in this file */
+.os-product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,27 +1,37 @@
-html, body {
+html,
+body {
   height: 100%;
-  font-size: 16px
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
-.lux{
+.os-product-card{
   background-color: #f9f9f9;
   font-family: Montserrat, sans-serif;
-  margin: 0;
+  width: 300px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  box-sizing: border-box;
+
 }
 
+/*
 .wrapper {
-  width: 300px;
+  width: 400px;
   margin: 100px auto;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
   display: grid;
 
-}
+} */
 
 .product-image{
     background-position: 50%;
@@ -40,7 +50,7 @@ html, body {
 }
 
 .product-content{
-  padding: 22px 24px;
+  padding: 22px 24px 10px 24px;
 }
 
 .product-rating{
@@ -78,9 +88,14 @@ html, body {
 }
 
 .product-title{
+  height: 60px;
+  width: 260px;
   font-size: 1rem;
   margin-bottom: 8px;
   font-weight: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word
 }
 
 .product-description{
@@ -100,7 +115,7 @@ html, body {
   justify-content: center;
   padding-bottom: 13px;
   padding-top: 13px;
-  border-radius: 3px;
+  border-radius: 0 0 10px 10px;
   align-items: center;
   cursor: pointer;
   font-size: .875rem;
@@ -113,4 +128,9 @@ html, body {
 .wrapper-btn-primary:hover{
   background-color: #4636db;
 }
+
+.wrapper-btn-primary:active{
+  opacity: 0.7;
+}
+
 

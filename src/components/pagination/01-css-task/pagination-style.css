@@ -1,17 +1,8 @@
-.wrapper {
-  margin: 100px auto;
-}
-
-.hyi{
-  display: flex;
-  justify-content: center;
-  color: rgb(71, 67, 67);
-}
-
 .os-products-footer{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  width: auto;
 }
 
 .os-pagination{
@@ -33,7 +24,7 @@
   height: 40px;
   justify-content: center;
   transition: .3s;
-  width: 40px;
+  inline-size: 40px;
   text-decoration: none;
 }
 
@@ -43,6 +34,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .os-pagination .page-link.active, .os-pagination .page-link:hover {

@@ -5,7 +5,6 @@
   <title>SearchBox component</title>
 
   <link rel="stylesheet" href="style.css">
-
   <style>
     .wrapper {
       width: 400px;
@@ -15,8 +14,14 @@
 </head>
 <body>
 <main>
-  <div class="wrapper">
+  <div class="wrapper" data-element = 'search'>
     <!-- SearchBox component -->
+    <form action="">
+      <div class="os-form-input use-icon">
+        <input class = 'style-search' id = 'search-input' data-element="search" placeholder="Search" type="text">
+        <label for="search-input" class="bi bi-search input-icon"></label>
+      </div>
+    </form>
   </div>
 </main>
 </body>

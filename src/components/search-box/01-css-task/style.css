@@ -1,3 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+.os-form-input{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px;
+}
+
+.os-form-input{
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 15);
+  width: 100%;
+  padding: 20px 18px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.os-form-input.use-icon .input-icon{
+  align-items: center;
+  color: #606060;
+  display: flex;
+  font-size: 1.375rem;
+  height: 100%;
+}
+
+.style-search{
+  border: none;
+  font-family: Montserrat,sans-serif;
+  font-size: 1.2rem;
+}
+
+
 /* put your styles in this file */
